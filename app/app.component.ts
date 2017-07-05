@@ -11,6 +11,8 @@ import { Task } from './task.model';
     <task-list [childTaskList]="masterTaskList" (clickSender)="editTask($event)"></task-list>
     <hr>
     <edit-task [childSelectedTask] = "masterSelectedTask" (doneButtonClickedSender) = "finishedEditting()"></edit-task>
+    <hr>
+    <new-task (newTaskSender)="addTask($event)"></new-task>
   </div>
   `
 })
@@ -36,5 +38,9 @@ export class AppComponent {
 
   finishedEditting(){
     this.masterSelectedTask = null;
+  }
+
+  addTask(newTaskFromChild: Task) {
+    this.masterTaskList.push(newTaskFromChild);
   }
 }
