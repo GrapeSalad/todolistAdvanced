@@ -45,5 +45,13 @@
   },
   "main": "gulpfile.js",
   "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimlan1510/angular2-to-do.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kimlan1510/angular2-to-do/issues"
+  },
+  "homepage": "https://github.com/kimlan1510/angular2-to-do#readme",
   "description": ""
 }
